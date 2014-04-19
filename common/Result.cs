@@ -1,43 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace json_for_csharp.common
 {
     public class Result
     {
-        public string wrapperType { get; set; }
-        public string kind { get; set; }
-        public int artistId { get; set; }
-        public int collectionId { get; set; }
-        public int trackId { get; set; }
-        public string artistName { get; set; }
-        public string collectionName { get; set; }
-        public string trackName { get; set; }
-        public string collectionCensoredName { get; set; }
-        public string trackCensoredName { get; set; }
-        public string artistViewUrl { get; set; }
-        public string collectionViewUrl { get; set; }
-        public string trackViewUrl { get; set; }
-        public string previewUrl { get; set; }
-        public string artworkUrl30 { get; set; }
-        public string artworkUrl60 { get; set; }
-        public string artworkUrl100 { get; set; }
-        public double collectionPrice { get; set; }
-        public double trackPrice { get; set; }
-        public string releaseDate { get; set; }
-        public string collectionExplicitness { get; set; }
-        public string trackExplicitness { get; set; }
-        public int discCount { get; set; }
-        public int discNumber { get; set; }
-        public int trackCount { get; set; }
-        public int trackNumber { get; set; }
-        public int trackTimeMillis { get; set; }
-        public string country { get; set; }
-        public string currency { get; set; }
-        public string primaryGenreName { get; set; }
-        public string radioStationUrl { get; set; }
+        public string WrapperType { get; set; }
+        public string Kind { get; set; }
+        public int ArtistId { get; set; }
+        public int CollectionId { get; set; }
+        public int TrackId { get; set; }
+        public string ArtistName { get; set; }
+        public string CollectionName { get; set; }
+        public string TrackName { get; set; }
+        public string CollectionCensoredName { get; set; }
+        public string TrackCensoredName { get; set; }
+        public string ArtistViewUrl { get; set; }
+        public string CollectionViewUrl { get; set; }
+        public string TrackViewUrl { get; set; }
+        public string PreviewUrl { get; set; }
+        public string ArtworkUrl30 { get; set; }
+        public string ArtworkUrl60 { get; set; }
+        public string ArtworkUrl100 { get; set; }
+        public double CollectionPrice { get; set; }
+        public double TrackPrice { get; set; }
+        public string ReleaseDate { get; set; }
+        public string CollectionExplicitness { get; set; }
+        public string TrackExplicitness { get; set; }
+        public int DiscCount { get; set; }
+        public int DiscNumber { get; set; }
+        public int TrackCount { get; set; }
+        public int TrackNumber { get; set; }
+        public int TrackTimeMillis { get; set; }
+        public string Country { get; set; }
+        public string Currency { get; set; }
+        public string PrimaryGenreName { get; set; }
+        public string RadioStationUrl { get; set; }
     }
 }

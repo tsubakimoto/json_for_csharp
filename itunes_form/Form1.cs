@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using json_for_csharp.common;
+using Newtonsoft.Json;
 
 namespace itunes_form
 {
@@ -26,6 +27,8 @@ namespace itunes_form
             textBox1.Text = string.Empty;
             var json = await GetJson();
             textBox1.Text = json;
+
+            var root = Deserialize<RootObject>(json);
         }
 
         private async Task<string> GetJson()
@@ -33,6 +36,11 @@ namespace itunes_form
             var client = new WebClient();
             client.Encoding = Encoding.UTF8;
             return await client.DownloadStringTaskAsync(URL);
+        }
+
+        private T Deserialize<T>(string json)
+        {
+            return JsonConvert.DeserializeObject<T>(json);
         }
     }
 }
