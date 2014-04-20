@@ -24,6 +24,15 @@
         <ListBox x:Name="listBox"
                  Grid.Row="1"
                  Margin="5"
-                 ScrollViewer.VerticalScrollBarVisibility="Auto" />
+                 ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{Binding ArtworkUrl100}" />
+                        <TextBlock Text="{Binding CollectionName}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>

@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ImageListItem.cs" />
     <Compile Include="Result.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RootObject.cs" />

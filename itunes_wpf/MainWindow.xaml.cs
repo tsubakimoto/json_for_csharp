@@ -33,6 +33,8 @@ namespace itunes_wpf
 
         private async void btnSearch_Click(object sender, RoutedEventArgs e)
         {
+            listBox.ItemsSource = null;
+
             if (string.IsNullOrEmpty(txtArtist.Text.Trim())) return;
 
             var term = HttpUtility.UrlEncode(txtArtist.Text, Encoding.UTF8);
@@ -66,7 +68,7 @@ namespace itunes_wpf
         {
             if (root == null) return;
 
-            var source = new List<string>();
+            var source = new List<ImageListItem>();
             foreach (var result in root.Results)
             {
                 source.Add(CreateSource(result));
@@ -74,9 +76,15 @@ namespace itunes_wpf
             listBox.ItemsSource = source;
         }
 
-        private string CreateSource(Result result)
+        private ImageListItem CreateSource(Result result)
         {
-            return result.CollectionName;
+            var item = new ImageListItem()
+            {
+                ArtistName = result.ArtistName,
+                CollectionName = result.CollectionName,
+                ArtworkUrl100 = result.ArtworkUrl100
+            };
+            return item;
         }
     }
 }
