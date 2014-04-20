@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "itunes_form", "itunes_form\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "common", "common\common.csproj", "{39B152A8-D374-4ED8-B3E9-2D64CF084FB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "itunes_wpf", "itunes_wpf\itunes_wpf.csproj", "{5F9A5BD1-6AEC-4493-A050-5C99C72EAC82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{39B152A8-D374-4ED8-B3E9-2D64CF084FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39B152A8-D374-4ED8-B3E9-2D64CF084FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39B152A8-D374-4ED8-B3E9-2D64CF084FB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F9A5BD1-6AEC-4493-A050-5C99C72EAC82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F9A5BD1-6AEC-4493-A050-5C99C72EAC82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F9A5BD1-6AEC-4493-A050-5C99C72EAC82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F9A5BD1-6AEC-4493-A050-5C99C72EAC82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
