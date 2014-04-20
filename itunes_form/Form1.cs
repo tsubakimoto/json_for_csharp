@@ -66,9 +66,18 @@ namespace itunes_form
 
             foreach (var result in root.Results)
             {
-                pictureBox1.ImageLocation = result.ArtworkUrl100;
-                break;
+                CreatePictureBox(result);
             }
+        }
+
+        private void CreatePictureBox(Result result)
+        {
+            var pBox = new PictureBox()
+            {
+                ImageLocation = result.ArtworkUrl100,
+                Parent = flowLayoutPanel1,
+                SizeMode = PictureBoxSizeMode.AutoSize
+            };
         }
     }
 }
