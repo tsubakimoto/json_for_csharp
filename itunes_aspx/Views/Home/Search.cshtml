@@ -1,0 +1,22 @@
+﻿@model itunes_aspx.Models.SearchModel
+@{
+    ViewBag.Title = "曲の検索";
+}
+
+<header>
+    <h1>@ViewBag.Title</h1>
+</header>
+
+<div id="main-content">
+    @using (Html.BeginForm("Search", "Home", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        
+        @Html.LabelFor(m => m.Artist)
+        @Html.TextBoxFor(m => m.Artist, new { autoFocus = "autoFocus", id = "artist" })
+        @Html.ValidationMessageFor(m => m.Artist)
+        <input type="submit" value="検索" />
+        
+        @Html.ValidationSummary()
+    }
+</div>
